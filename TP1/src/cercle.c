@@ -1,10 +1,21 @@
 #include <stdio.h>
-#include <string.h>
+#include <math.h> // Pour utiliser M_PI (la valeur précise de pi)
 
 int main() {
-double pi = 3.1416;
-double r = 6;  
-    printf("L'air du cercle = %f", pi*(r*r));
-   printf("Le périmètre du cercle = %f", pi*(r+r));
-}
+    double rayon = 6.0;
+    
+   
+    double aire;
+    double perimetre;
 
+    // Formule: aire = pi * rayon * rayon
+    aire = M_PI * rayon * rayon; 
+    
+    // Formule: périmètre = 2 * pi * rayon
+    perimetre = 2 * M_PI * rayon; 
+ 
+    printf("L'aire du cercle = %f\n", aire);
+    printf("Le périmètre du cercle = %f\n", perimetre);
+
+    return 0; 
+}
