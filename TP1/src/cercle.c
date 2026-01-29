@@ -2,7 +2,9 @@
 #include <math.h> // Pour utiliser M_PI (la valeur précise de pi)
 
 int main() {
-    double rayon = 6.0;
+    double rayon;
+    printf("Entrez la valeur du rayon : ");
+    scanf("%lf", &rayon); 
     
    
     double aire;
@@ -19,3 +21,4 @@ int main() {
 
     return 0; 
 }
+
